@@ -8,6 +8,16 @@
 	<link rel="stylesheet" href="css/factorial.css">
 </head>
 <body>
+	<script>
+		var n = prompt("숫자를 입력하세요.");
+		var nFact = 1; //1을 기본 값으로 지정
+		var i = 2;		//1! = 1dlrl Eoansdp i=2부터 시작
 
+		while (i <= n) {	// i=n까지 반복
+			nFact *= i;		//nFact = nFact * i
+			i++;
+		}
+		document.write(n + "!=" + nFact);
+	</script>
 </body>
 </html>
