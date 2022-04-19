@@ -4,7 +4,7 @@ function calcSum(n) {
   for(let i = 1; i < n + 1; i++) {
     sum += i;
   }  
-  let sum;  // 변수 재선언
+  //let sum;  // 변수 재선언
   console.log(sum);
 }
 
