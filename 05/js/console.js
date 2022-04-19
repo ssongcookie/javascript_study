@@ -12,3 +12,26 @@ function add(a,b){
     var sum = a+b;
     alert("두 수를 더한 값은? : "+sum);
 }
+
+//익명 함수
+var add = function(a,b){
+    return a+b;
+}
+
+var sum = add(10,20);
+sum
+
+
+//즉시 실행 함수
+var result = (function(a,b){
+    return a+b;
+}(10,20));
+
+console.log(result);
+
+//화살표 함수
+    //매개변수가 1개일 때
+    let hi = user => document.write(user);
+
+    //매개변수가 2개일 때
+    let sum = (a,b) => a+b;
