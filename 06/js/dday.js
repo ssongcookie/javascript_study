@@ -16,7 +16,7 @@ var passedTime = toNow - toFirst;
 var passedDay = Math.round(passedTime/(24*60*60*1000)); //1일=24시간*60분*60초*1000밀리초
 
 //화면에 표시
-document.querySelector('#accent').innerText = passedDay + "일";
+document.querySelector('#accent').innerText = (passedDay+1) + "일";
 
 calcDate(100);  // 100일 기념일을 계산해서 표시합니다.
 calcDate(365);  // 1년 기념일을 계산해서 표시합니다.
