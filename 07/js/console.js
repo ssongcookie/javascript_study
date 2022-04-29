@@ -107,3 +107,40 @@ study
 study.splice(2,0,'web')
 study
 //(4) ['html', 'css', 'web', 'js']
+
+//여러개의 요소를 추가하고 싶다면 추가하고 싶은 요소를 세번째 인수부터 차례대로 나열하면 된다.
+var char = [1,2,3]
+char.splice(1,0,4,5,6) //인덱스가 1인 위치에 4,5,6을 차례대로 추가.
+char
+//(6) [1, 4, 5, 6, 2, 3]
+
+
+
+var js = ["jquery","javascript"]
+js.splice(1,0,"typescript","angular")
+js
+//(4) ['jquery', 'typescript', 'angular', 'javascript']
+
+
+
+//원하는 위치의 요소들을 추출하는 slice() 함수
+//시작 인덱스와 끝 인덱스를 지정해 그 사이의 요소를 꺼낸다.
+//시작 인덱스만 지정할 경우 시작 인덱스부터 배열 끝까지 추출한다.
+var colors = ["red","green","blue","white","black"]
+colors.slice(2)
+//(3) ['blue', 'white', 'black']   //인덱스 2부터 끝까지 추출
+colors
+//(5) ['red', 'green', 'blue', 'white', 'black']  //원래 배열은 변경되지 않음
+
+
+var colors2 = colors.slice(1,4)    //colors배열에서 두번째 요소(인덱스1)부터 네번째 요소(인덱스3)까지 추출해서 새로운 배열 colors2를 만들려면 slice(1,4)라고 지정한다.
+colors2
+//(3) ['green', 'blue', 'white']  
+colors
+//(5) ['red', 'green', 'blue', 'white', 'black']
+//=>원래 배열은 변경되지 않기 때문에 특정 요소를 삭제하는 용도로 사용할 수 없다.
+
+
+//splice()함수와 slice()함수는 같은 기능을 하지만 
+//배열에서 추출한 요소를 가지고 새로운 배열을 만들어 사용하겠다면  slice()함수가 적당하고, 
+//배열에서 일부 요소를 삭제하겠다면 splice()함수가 적당하다.
